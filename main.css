@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #0e79e7;
+    margin-bottom: 32px;
+}
+
+header h1 {
+    font-style: italic;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    height: 70px;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+header nav li a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+.topimg {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.topimg div {
+    margin-left: 32px;
+}
+
+.topimg img {
+    max-width: 50%;
+}
+
+section h2 {
+    padding-top: 10px;
+    margin-bottom: 16px;
+    font-style: italic;
+    color: #0e79e7;
+    border-bottom: 3px solid #0e79e7;
+    padding-bottom: 10px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    margin-bottom: 32px;
+}
+
+.produto {
+    width: 100%;
+}
+
+.produto img {
+    max-width: 100%;
+}
+
+.produto p {
+    margin: 16px 0;
+    width: 100%;
+}
+
+.produtos button {
+    background-color: #3867CF;
+    color: #fff;
+    padding: 8px 32px;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.section-produtos {
+    margin-top: 16px;
+}
+
+button:focus-visible,
+nav li a:focus-visible {
+    outline: 2px dashed blue;
+    outline-offset: 2px;
+}
+
+button:hover,
+button:focus,
+nav li a:hover,
+nav li a:focus {
+    background: #005ae1
+}
+
+input:focus,
+textarea:focus {
+    outline-color: #005ae1;
+}
+
+@media screen and (max-width: 640px) {
+    h1 {
+        font-size: 26px;
+        padding: 10px;
+        font-weight: bold;
+        justify-content: space-between;
+    }
+
+    header nav li {
+        display: inline;
+        font-size: 16px;
+        font-weight: bold;
+        justify-content: space-between;
+    }
+
+    header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 100%;
+    }
+
+    section .container {
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 100%;
+    }
+
+    .listadeprodutos {
+        display: grid;
+        grid-template-columns: repeat(1, 90%);
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    body,
+    html {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 16px 10px;
+    }
+
+    header nav li {
+        display: inline-block;
+        margin: 4px 0;
+    }
+
+    .topimg {
+        display: block;
+        max-width: 100%;
+    }
+
+    .topimg img {
+        display: block;
+        margin: 0 auto;
+        max-width: inherit;
+        padding: 0 32px;
+    }
+
+    .topimg div {
+        margin: 32px;
+    }
+
+    .section-produtos {
+        margin: 0 32px;
+    }
+
+    .produtos {
+        display: block;
+        width: 100%;
+    }
+
+    .produto {
+        margin: 32px 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        padding: 16px 0;
+    }
+
+    header h1 {
+        margin-left: 64px;
+    }
+
+    header nav {
+        margin-right: 76px;
+    }
+
+    .container-principal {
+        width: 680px;
+        max-width: 100%;
+    }
+
+    .topimg {
+        display: block;
+        max-width: 100%;
+    }
+
+    .topimg img {
+        display: block;
+        margin: 0;
+        max-width: inherit;
+        width: 680px;
+    }
+
+    .topimg div {
+        margin: 32px 0;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+        row-gap: 16px;
+    }
+}
