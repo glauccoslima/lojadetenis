@@ -239,3 +239,45 @@ textarea:focus {
         row-gap: 16px;
     }
 }
+
+@media screen and (width: 1024px),
+(width: 1366px) and (orientation: portrait) {
+    header {
+        padding: 16px 0;
+    }
+
+    header h1 {
+        margin-left: 64px;
+    }
+
+    header nav {
+        margin-right: 76px;
+    }
+
+    .container-principal {
+        width: 950px;
+        max-width: 100%;
+    }
+
+    .topimg {
+        display: block;
+        max-width: 100%;
+    }
+
+    .topimg img {
+        display: block;
+        margin: 0;
+        max-width: inherit;
+        width: 950px;
+    }
+
+    .topimg div {
+        margin: 32px 0;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+        row-gap: 16px;
+    }
+}
